@@ -38,6 +38,7 @@ function generate_keys (){
 	fi
 }
 
+# If recursion list supplied, create recursion directives
 function generate_recursion (){
         if [[ "$1" ]]; then
 		echo -en "recurtion yes;\n\tallow-recursion { $1 };"
@@ -46,6 +47,7 @@ function generate_recursion (){
 	fi
 }
 
+# Create secondary zone directives
 function generate_secondary_zones (){
 	if [[ "$1" ]]; then	
 		RETURN=""
