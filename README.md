@@ -48,5 +48,5 @@ FORWARDERS
 
 
 ```bash
-docker run --rm -it --env "SECONDARY_ZONES=mydomain.com,192.168.0.1;192.168.1.1;|0.168.192.in-addr.arpa,192.168.0.1;192.168.1.1;" --env "KEYS=192.168.0.1,mykey,hmac-md5,xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|192.168.1.1,mykey,hmac-md5,xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" --publish 54:53/tcp --publish 54:53/udp aiur/bind9-slave:0.2
+docker run --rm -it --env "SECONDARY_ZONES=mydomain.com,192.168.0.1;192.168.1.1;|0.168.192.in-addr.arpa,192.168.0.1;192.168.1.1;" --env "KEYS=192.168.0.1,mykey,hmac-md5,xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|192.168.1.1,mykey,hmac-md5,xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" --publish 54:53/tcp --publish 54:53/udp aiur/bind9-slave
 ```
