@@ -4,7 +4,7 @@ set -eo pipefail
 # If forwarders were present, create forwarders directive
 function generate_forwarders (){
 	if [[ "$1" ]]; then
-		echo -en "forwarders { $1 }\n\tforward only;"
+		echo -en "forwarders { $1 };\n\tforward only;"
 	fi
 }
 
