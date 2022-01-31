@@ -41,7 +41,7 @@ function generate_keys (){
 # If recursion list supplied, create recursion directives
 function generate_recursion (){
         if [[ "$1" ]]; then
-		echo -en "recurtion yes;\n\tallow-recursion { $1 };"
+		echo -en "recursion yes;\n\tallow-recursion { $1 };"
 	else
 		echo -en "recursion no;\n\tallow-recursion { none; };"
 	fi

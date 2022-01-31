@@ -11,7 +11,7 @@ Docker image to create secondary bind server
 | `KEYS` | server,name,algo,secret[\|...] | | key \<name\> { algorithm \<algo\>; secret \<secret\>; };<br>server \<server\> { keys \<name\>; };
 | `LISTEN_ON` | address_match_element; ... | any; | listen-on { \<value\> };<br>listen-on-v6 { none; };
 | `QUERYLOG` | boolean; | no; | querylog \<value\>
-| `RECURSION` | address_match_element; ... | none; | recurtion yes;<br>allow-recursion { \<value\> };
+| `RECURSION` | address_match_element; ... | none; | recursion yes;<br>allow-recursion { \<value\> };
 | `SECONDARY_ZONES` | zone,primary[\|...] | | zone \<zone\> { type slave; masters { \<primary\> }; file "/var/bind/sec/\<zone\>"; };
 
 
