@@ -1,4 +1,4 @@
-FROM alpine:3.23.2
+FROM alpine:3.23.3
 RUN apk --no-cache update && apk --no-cache upgrade && apk add --no-cache bash execline bind && cp /etc/bind/named.conf.authoritative /etc/bind/named.conf
 COPY docker-entrypoint.sh /usr/local/bin
 EXPOSE 53/tcp
