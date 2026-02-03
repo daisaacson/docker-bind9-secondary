@@ -88,3 +88,18 @@ spec:
           protocol: UDP
 
 ```
+
+## Build
+
+### docker
+
+### podman
+
+```shell
+version="0.19"
+image="daisaacson/bind9-secondary"
+podman manifest create ${image}:${version}
+podman build --platform linux/amd64,linux/arm64,linux/i386 --manifest ${image}:${version} .
+podman login docker.io
+podman manifest push ${image}:${version}
+```
